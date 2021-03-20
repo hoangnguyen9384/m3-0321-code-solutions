@@ -3,16 +3,16 @@ import React from 'react';
 export default class HotButton extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { isClicked: 0 };
+    this.state = { clickCount: 0 };
     this.clickTochange = this.clickTochange.bind(this);
   }
 
   clickTochange() {
-    this.setState(state => ({ isClicked: this.state.isClicked + 1 }));
+    this.setState(state => ({ clickCount: this.state.clickCount + 1 }));
   }
 
   render() {
-    const totalClicked = this.state.isClicked;
+    const totalClicked = this.state.clickCount;
     let button;
     if (totalClicked <= 3) {
       button = 'purple';
