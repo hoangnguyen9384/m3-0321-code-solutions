@@ -18,6 +18,6 @@ const content = (
 );
 
 ReactDOM.render(
-  <ul>{content}</ul>,
+  <div>{content}</div>,
   document.getElementById('root')
 );
