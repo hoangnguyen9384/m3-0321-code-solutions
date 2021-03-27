@@ -1,19 +1,19 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 class NewletterForm extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state = {email: ''},
+    this.state = { email: '' };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleChange(event){
-    this.setState({email: event.target.value});
+  handleChange(event) {
+    this.setState({ email: event.target.value });
   }
 
-  handleSubmit(event){
+  handleSubmit(event) {
     console.log('New State: ', this.state);
     event.preventDefault();
   }
@@ -26,11 +26,9 @@ class NewletterForm extends React.Component {
         </label>
        <button type="submit">Sign Up</button>
       </form>
-    )
+    );
   }
-
 }
-
 
 ReactDOM.render(
   <NewletterForm />,
