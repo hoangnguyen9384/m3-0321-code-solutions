@@ -22,7 +22,7 @@ class NewletterForm extends React.Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <label>
-          Email <input type="text" value={this.state.value} onChange={this.handleChange} />
+          Email <input type="text" value={this.state.email} onChange={this.handleChange} />
         </label>
        <button type="submit">Sign Up</button>
       </form>
