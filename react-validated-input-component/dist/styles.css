@@ -1,0 +1,23 @@
+
+
+
+
+
+.message {
+  color: red;
+  font-size: 17px;
+}
+
+.fa-user-times {
+  color: red;
+  font-size: 24px;
+  position: absolute;
+  margin-left: 8px;
+}
+
+.fa-user-check {
+  color: green;
+  font-size: 24px;
+  position: absolute;
+  margin-left: 8px;
+}
